@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏈 QB Dashboard</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #0a0a0a;
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 24px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  header h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  header p {
+    color: #888;
+    margin-top: 4px;
+    font-size: 0.95rem;
+  }
+  .stats {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  .stat-card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 16px 28px;
+    text-align: center;
+    min-width: 140px;
+  }
+  .stat-card .num {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .stat-card .label {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  @media (max-width: 800px) {
+    .columns { grid-template-columns: 1fr; }
+  }
+  .column {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 300px;
+  }
+  .column h2 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #2a2a2a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .col-future h2 { color: #60a5fa; border-color: #1e3a5f; }
+  .col-current h2 { color: #fbbf24; border-color: #5f4b1e; }
+  .col-done h2 { color: #34d399; border-color: #1e5f3a; }
+  .task {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: grab;
+    transition: all 0.15s;
+    position: relative;
+  }
+  .task:hover { border-color: #555; transform: translateY(-1px); }
+  .task.dragging { opacity: 0.4; }
+  .task .task-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .task .task-desc {
+    font-size: 0.82rem;
+    color: #999;
+    line-height: 1.4;
+  }
+  .task .task-meta {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+  }
+  .tag {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: #2a2a2a;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .tag.seo { background: #1e3a5f; color: #60a5fa; }
+  .tag.brand { background: #5f1e5f; color: #d08af0; }
+  .tag.content { background: #1e5f3a; color: #34d399; }
+  .tag.bd { background: #5f4b1e; color: #fbbf24; }
+  .tag.ai { background: #3a1e5f; color: #a78bfa; }
+  .tag.team { background: #5f1e2e; color: #f87171; }
+  .task .delete-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    line-height: 1;
+  }
+  .task .delete-btn:hover { color: #f87171; background: #2a1515; }
+  .drop-zone {
+    border: 2px dashed #333;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    color: #555;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    transition: all 0.2s;
+    min-height: 40px;
+    display: none;
+  }
+  .drop-zone.active { display: block; border-color: #555; background: #1a1a1a; }
+  .add-task {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    background: #1e1e1e;
+    border: 1px dashed #444;
+    border-radius: 8px;
+    color: #666;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.15s;
+  }
+  .add-task:hover { border-color: #888; color: #aaa; }
+  /* Modal */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-overlay.show { display: flex; }
+  .modal {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 24px;
+    width: 420px;
+    max-width: 90vw;
+  }
+  .modal h3 { margin-bottom: 16px; color: #fff; }
+  .modal input, .modal textarea, .modal select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    background: #0a0a0a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #e0e0e0;
+    font-family: inherit;
+    font-size: 0.9rem;
+  }
+  .modal textarea { resize: vertical; min-height: 60px; }
+  .modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 8px;
+  }
+  .btn {
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .btn-primary { background: #60a5fa; color: #000; }
+  .btn-primary:hover { background: #93c5fd; }
+  .btn-cancel { background: #333; color: #aaa; }
+  .btn-cancel:hover { background: #444; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏈 Quarterback Dashboard</h1>
+  <p>Newsome Game Plan — 4 Corner Resources & Beyond</p>
+  <p style="color:#555; font-size:0.8rem; margin-top:4px;">Auto-refreshes every 10s · Managed by QB</p>
+</header>
+
+<div class="stats">
+  <div class="stat-card"><div class="num" id="stat-future">0</div><div class="label">Upcoming</div></div>
+  <div class="stat-card"><div class="num" id="stat-current">0</div><div class="label">In Progress</div></div>
+  <div class="stat-card"><div class="num" id="stat-done">0</div><div class="label">Completed</div></div>
+</div>
+
+<div class="columns">
+  <div class="column col-future" data-col="future">
+    <h2>📋 Future Tasks</h2>
+    <div class="task-list" id="future-list"></div>
+    <div class="drop-zone" data-col="future">Drop here</div>
+    <button class="add-task" onclick="openModal('future')">+ Add Task</button>
+  </div>
+  <div class="column col-current" data-col="current">
+    <h2>⚡ Current Tasks</h2>
+    <div class="task-list" id="current-list"></div>
+    <div class="drop-zone" data-col="current">Drop here</div>
+    <button class="add-task" onclick="openModal('current')">+ Add Task</button>
+  </div>
+  <div class="column col-done" data-col="done">
+    <h2>✅ Completed</h2>
+    <div class="task-list" id="done-list"></div>
+    <div class="drop-zone" data-col="done">Drop here</div>
+    <button class="add-task" onclick="openModal('done')">+ Add Task</button>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal">
+    <h3 id="modal-title">Add Task</h3>
+    <input type="text" id="task-title" placeholder="Task title" />
+    <textarea id="task-desc" placeholder="Description (optional)"></textarea>
+    <select id="task-tag">
+      <option value="">No tag</option>
+      <option value="seo">SEO/AEO</option>
+      <option value="brand">Brand/Authority</option>
+      <option value="content">Content</option>
+      <option value="bd">Business Dev</option>
+      <option value="ai">AI/Tech</option>
+      <option value="team">Team</option>
+    </select>
+    <div class="modal-actions">
+      <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveTask()">Add</button>
+    </div>
+  </div>
+</div>
+
+<script>
+let tasks = [];
+let modalCol = 'future';
+let dragId = null;
+let lastUpdated = '';
+
+// Load tasks from tasks.json (QB controls this file)
+async function loadTasks() {
+  try {
+    const res = await fetch('tasks.json?' + Date.now());
+    const data = await res.json();
+    tasks = data.tasks || [];
+    lastUpdated = data.lastUpdated || '';
+    render();
+  } catch(e) {
+    console.error('Could not load tasks.json', e);
+  }
+}
+
+// Auto-refresh every 10 seconds to pick up QB's changes
+setInterval(loadTasks, 10000);
+loadTasks();
+
+function d() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+
+function save() {
+  // Tasks are managed by QB — dashboard is read-only view
+  render();
+}
+
+function render() {
+  ['future','current','done'].forEach(col => {
+    const list = document.getElementById(col + '-list');
+    const colTasks = tasks.filter(t => t.col === col);
+    list.innerHTML = colTasks.map(t => `
+      <div class="task" draggable="true" data-id="${t.id}" ondragstart="onDragStart(event)" ondragend="onDragEnd(event)">
+        <button class="delete-btn" onclick="deleteTask('${t.id}')" title="Delete">×</button>
+        <div class="task-title">${esc(t.title)}</div>
+        ${t.desc ? `<div class="task-desc">${esc(t.desc)}</div>` : ''}
+        ${t.tag ? `<div class="task-meta"><span class="tag ${t.tag}">${t.tag}</span></div>` : ''}
+      </div>
+    `).join('');
+  });
+  document.getElementById('stat-future').textContent = tasks.filter(t => t.col === 'future').length;
+  document.getElementById('stat-current').textContent = tasks.filter(t => t.col === 'current').length;
+  document.getElementById('stat-done').textContent = tasks.filter(t => t.col === 'done').length;
+}
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function openModal(col) {
+  modalCol = col;
+  document.getElementById('task-title').value = '';
+  document.getElementById('task-desc').value = '';
+  document.getElementById('task-tag').value = '';
+  document.getElementById('modal-overlay').classList.add('show');
+  document.getElementById('task-title').focus();
+}
+
+function closeModal() { document.getElementById('modal-overlay').classList.remove('show'); }
+
+function saveTask() {
+  const title = document.getElementById('task-title').value.trim();
+  if (!title) return;
+  tasks.push({
+    id: d(),
+    col: modalCol,
+    title,
+    desc: document.getElementById('task-desc').value.trim(),
+    tag: document.getElementById('task-tag').value
+  });
+  closeModal();
+  save();
+}
+
+function deleteTask(id) {
+  tasks = tasks.filter(t => t.id !== id);
+  save();
+}
+
+// Drag & drop
+function onDragStart(e) {
+  dragId = e.target.dataset.id;
+  e.target.classList.add('dragging');
+  document.querySelectorAll('.drop-zone').forEach(z => z.classList.add('active'));
+}
+
+function onDragEnd(e) {
+  e.target.classList.remove('dragging');
+  document.querySelectorAll('.drop-zone').forEach(z => z.classList.remove('active'));
+  dragId = null;
+}
+
+document.querySelectorAll('.drop-zone').forEach(zone => {
+  zone.addEventListener('dragover', e => { e.preventDefault(); zone.style.borderColor = '#60a5fa'; });
+  zone.addEventListener('dragleave', () => { zone.style.borderColor = ''; });
+  zone.addEventListener('drop', e => {
+    e.preventDefault();
+    zone.style.borderColor = '';
+    const col = zone.dataset.col;
+    const task = tasks.find(t => t.id === dragId);
+    if (task) { task.col = col; save(); }
+  });
+});
+
+document.querySelectorAll('.task-list').forEach(list => {
+  list.addEventListener('dragover', e => e.preventDefault());
+  list.addEventListener('drop', e => {
+    e.preventDefault();
+    const col = list.id.replace('-list', '');
+    const task = tasks.find(t => t.id === dragId);
+    if (task) { task.col = col; save(); }
+  });
+});
+
+// Enter key in modal
+document.getElementById('task-title').addEventListener('keydown', e => { if (e.key === 'Enter') saveTask(); });
+
+render();
+</script>
+</body>
+</html>

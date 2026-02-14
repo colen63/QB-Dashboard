@@ -1,0 +1,203 @@
+{
+  "lastUpdated": "2026-02-14T12:30:00-05:00",
+  "tasks": [
+    {
+      "id": "001",
+      "col": "done",
+      "title": "4CR Website SEO/AEO Audit",
+      "desc": "Full audit of 4cornerresources.com — Score: 6/10",
+      "tag": "seo",
+      "assignee": "Scout",
+      "created": "2026-02-13",
+      "completed": "2026-02-13"
+    },
+    {
+      "id": "007",
+      "col": "done",
+      "title": "Task Dashboard",
+      "desc": "Build the QB Dashboard for tracking tasks",
+      "tag": "ai",
+      "assignee": "QB",
+      "created": "2026-02-13",
+      "completed": "2026-02-13"
+    },
+    {
+      "id": "008",
+      "col": "done",
+      "title": "Competitor SEO Analysis",
+      "desc": "Analyzed Robert Half, Adecco, Insight Global vs 4CR — found major schema gaps to exploit",
+      "tag": "seo",
+      "assignee": "Scout",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "009",
+      "col": "done",
+      "title": "Florida City Landing Page Briefs",
+      "desc": "Content briefs for Orlando, Tampa, Miami, Fort Lauderdale, Jacksonville",
+      "tag": "seo",
+      "assignee": "Scout",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "010",
+      "col": "done",
+      "title": "GSC Data Analysis",
+      "desc": "Full analysis of Google Search Console data — identified buyer keyword gap and traffic decline",
+      "tag": "seo",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "011",
+      "col": "done",
+      "title": "API Keys Configured",
+      "desc": "Gemini (paid), OpenAI, and Brave Search API keys added and working",
+      "tag": "ai",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "012",
+      "col": "done",
+      "title": "Second Brain Dashboard",
+      "desc": "Next.js app for reviewing agent memories, tasks, and strategy docs",
+      "tag": "ai",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "013",
+      "col": "done",
+      "title": "Morning Briefing Scheduled",
+      "desc": "Daily 7 AM ET briefing for Pete — news, ideas, tasks, recommendations",
+      "tag": "ops",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "014",
+      "col": "done",
+      "title": "City Landing Pages Built (HTML)",
+      "desc": "5 WordPress-ready HTML pages + schema for Orlando, Tampa, Miami, Fort Lauderdale, Jacksonville",
+      "tag": "seo",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "015",
+      "col": "current",
+      "title": "Publish City Landing Pages",
+      "desc": "Pete to paste HTML into WordPress for all 5 Florida city pages + add schema markup",
+      "tag": "seo",
+      "assignee": "Pete",
+      "created": "2026-02-14"
+    },
+    {
+      "id": "016",
+      "col": "current",
+      "title": "Set Up Telegram Group Chat",
+      "desc": "Cole to fix bot privacy settings, Pete to add bot to group — QB War Room",
+      "tag": "ops",
+      "assignee": "Cole",
+      "created": "2026-02-14"
+    },
+    {
+      "id": "017",
+      "col": "future",
+      "title": "Optimize 'Best Staffing Agencies' List Pages",
+      "desc": "Refresh the best IT/finance/legal staffing pages — 711K+ impressions at position 50. Huge opportunity.",
+      "tag": "seo",
+      "assignee": "QB",
+      "created": "2026-02-14"
+    },
+    {
+      "id": "018",
+      "col": "future",
+      "title": "Internal Linking Sprint",
+      "desc": "Add employer CTAs to top 20 candidate-facing pages to funnel traffic to services",
+      "tag": "seo",
+      "assignee": "Pete",
+      "created": "2026-02-14"
+    },
+    {
+      "id": "019",
+      "col": "future",
+      "title": "Schema Markup via Yoast",
+      "desc": "Add EmploymentAgency + FAQPage schema to homepage and key service pages",
+      "tag": "seo",
+      "assignee": "Pete",
+      "created": "2026-02-14"
+    },
+    {
+      "id": "020",
+      "col": "future",
+      "title": "Google Business Profile Setup",
+      "desc": "Optimize Orlando GBP listing + create service-area listings for Tampa & Fort Lauderdale",
+      "tag": "seo",
+      "assignee": "Pete",
+      "created": "2026-02-14"
+    },
+    {
+      "id": "021",
+      "col": "future",
+      "title": "Florida Hiring & Salary Guide",
+      "desc": "Create pillar content piece — '2026 Florida Employer's Guide' to compete with Robert Half's Salary Guide",
+      "tag": "content",
+      "assignee": "QB",
+      "created": "2026-02-14"
+    },
+    {
+      "id": "003",
+      "col": "future",
+      "title": "LinkedIn Strategy for Pete",
+      "desc": "Develop content + engagement + prospect monitoring strategy for Pete's LinkedIn",
+      "tag": "brand",
+      "assignee": "QB",
+      "created": "2026-02-13"
+    },
+    {
+      "id": "004",
+      "col": "future",
+      "title": "YouTube Channel Audit",
+      "desc": "Review The AI Worker and Cornering the Job Market channels",
+      "tag": "content",
+      "assignee": "TBD",
+      "created": "2026-02-13"
+    },
+    {
+      "id": "005",
+      "col": "future",
+      "title": "Outbound BD Playbook",
+      "desc": "Create structured outbound business development strategy for 4CR",
+      "tag": "bd",
+      "assignee": "TBD",
+      "created": "2026-02-13"
+    },
+    {
+      "id": "006",
+      "col": "future",
+      "title": "Cole's AI Venture Brainstorm",
+      "desc": "Research and propose entrepreneurial ideas leveraging OpenClaw + Claude",
+      "tag": "ai",
+      "assignee": "QB",
+      "created": "2026-02-13"
+    },
+    {
+      "id": "002",
+      "col": "future",
+      "title": "Build Specialist Agent Roster",
+      "desc": "Create remaining agents: Scribe, Analytics, Hype, Closer, Intel, LinkedIn Pro",
+      "tag": "team",
+      "assignee": "QB",
+      "created": "2026-02-13"
+    }
+  ]
+}
