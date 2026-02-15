@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T12:30:00-05:00",
+  "lastUpdated": "2026-02-15T17:00:00-05:00",
   "tasks": [
     {
       "id": "001",
@@ -92,6 +92,136 @@
       "completed": "2026-02-14"
     },
     {
+      "id": "021",
+      "col": "done",
+      "title": "Florida Hiring & Salary Guide",
+      "desc": "Already exists at 4cornerresources.com/hiring-salary-guide/ — audit/optimize instead of rebuilding",
+      "tag": "content",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "022",
+      "col": "done",
+      "title": "Pete Voice Guide",
+      "desc": "Complete voice profile — writing samples, preferences, 6-point QB quality gate for all content",
+      "tag": "content",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "023",
+      "col": "done",
+      "title": "PR Outreach Package",
+      "desc": "Q1 2026 Employee Mindset Survey — 37 journalist targets, 6 pitch angles, 20 personalized pitches",
+      "tag": "brand",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "024",
+      "col": "done",
+      "title": "4CR Brand Guidelines Extracted",
+      "desc": "Full brand guide parsed — colors, fonts, logo specs, pattern system saved to /workspace/4cr-brand/",
+      "tag": "brand",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "025",
+      "col": "done",
+      "title": "CTJM Episode Index",
+      "desc": "50+ episodes indexed (Nov 2025 - Feb 2026) to prevent recommending stories Pete already covered",
+      "tag": "content",
+      "assignee": "QB",
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
+    },
+    {
+      "id": "026",
+      "col": "done",
+      "title": "Orlando V3 Landing Page",
+      "desc": "4,200+ word Orlando staffing page — market data, salary tables, neighborhood mapping, 15 FAQs",
+      "tag": "seo",
+      "assignee": "Scribe",
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
+    },
+    {
+      "id": "027",
+      "col": "done",
+      "title": "Last30Days Skill Installed",
+      "desc": "Reddit + Web + OpenAI working. X needs cookie auth, YouTube needs yt-dlp.",
+      "tag": "ai",
+      "assignee": "QB",
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
+    },
+    {
+      "id": "016",
+      "col": "done",
+      "title": "Telegram Group Chat",
+      "desc": "QB Game Planning group created and working",
+      "tag": "ops",
+      "assignee": "Cole",
+      "created": "2026-02-14",
+      "completed": "2026-02-15"
+    },
+    {
+      "id": "028",
+      "col": "done",
+      "title": "Compound Learning Rule",
+      "desc": "Mandatory write-to-memory rule added to AGENTS.md — no more mental notes",
+      "tag": "ops",
+      "assignee": "QB",
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
+    },
+    {
+      "id": "029",
+      "col": "done",
+      "title": "Nightly Memory Review Cron",
+      "desc": "Daily 11 PM ET sweep of all conversations — captures missed learnings to memory files",
+      "tag": "ops",
+      "assignee": "QB",
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
+    },
+    {
+      "id": "030",
+      "col": "done",
+      "title": "Scout Agent Deployed",
+      "desc": "SEO/AEO specialist — Gemini 2.5 Pro, active and operational",
+      "tag": "team",
+      "assignee": "QB",
+      "created": "2026-02-14",
+      "completed": "2026-02-14"
+    },
+    {
+      "id": "031",
+      "col": "done",
+      "title": "Hype Agent Deployed",
+      "desc": "Brand & social media specialist — Claude Opus 4, active",
+      "tag": "team",
+      "assignee": "QB",
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
+    },
+    {
+      "id": "032",
+      "col": "done",
+      "title": "Intel Agent Deployed",
+      "desc": "Competitive intelligence — Gemini 2.5 Pro, active",
+      "tag": "team",
+      "assignee": "QB",
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
+    },
+    {
       "id": "015",
       "col": "current",
       "title": "Publish City Landing Pages",
@@ -101,13 +231,40 @@
       "created": "2026-02-14"
     },
     {
-      "id": "016",
+      "id": "033",
       "col": "current",
-      "title": "Set Up Telegram Group Chat",
-      "desc": "Cole to fix bot privacy settings, Pete to add bot to group — QB War Room",
+      "title": "First LinkedIn Post — Reverse Recruiting",
+      "desc": "BLOCKED: Waiting for Scribe agent registration. Then: QB brief → Scribe writes → QB quality gate → Pete review",
+      "tag": "brand",
+      "assignee": "Scribe",
+      "created": "2026-02-15"
+    },
+    {
+      "id": "034",
+      "col": "current",
+      "title": "Fix Resend API (Email Delivery)",
+      "desc": "API key returning 403 — Cole needs to check/refresh. Required for content delivery to Pete.",
       "tag": "ops",
       "assignee": "Cole",
-      "created": "2026-02-14"
+      "created": "2026-02-15"
+    },
+    {
+      "id": "035",
+      "col": "current",
+      "title": "Pete Newsome Quotes Database",
+      "desc": "Pull best takes from CTJM transcripts, LinkedIn, blogs into searchable reference",
+      "tag": "content",
+      "assignee": "QB",
+      "created": "2026-02-15"
+    },
+    {
+      "id": "036",
+      "col": "current",
+      "title": "Dashboard Auto-Update Cron",
+      "desc": "Keep QB Dashboard on GitHub continuously updated",
+      "tag": "ops",
+      "assignee": "QB",
+      "created": "2026-02-15"
     },
     {
       "id": "017",
@@ -146,15 +303,6 @@
       "created": "2026-02-14"
     },
     {
-      "id": "021",
-      "col": "future",
-      "title": "Florida Hiring & Salary Guide",
-      "desc": "Create pillar content piece — '2026 Florida Employer's Guide' to compete with Robert Half's Salary Guide",
-      "tag": "content",
-      "assignee": "QB",
-      "created": "2026-02-14"
-    },
-    {
       "id": "003",
       "col": "future",
       "title": "LinkedIn Strategy for Pete",
@@ -178,7 +326,7 @@
       "title": "Outbound BD Playbook",
       "desc": "Create structured outbound business development strategy for 4CR",
       "tag": "bd",
-      "assignee": "TBD",
+      "assignee": "Closer",
       "created": "2026-02-13"
     },
     {
@@ -193,11 +341,38 @@
     {
       "id": "002",
       "col": "future",
-      "title": "Build Specialist Agent Roster",
-      "desc": "Create remaining agents: Scribe, Analytics, Hype, Closer, Intel, LinkedIn Pro",
+      "title": "Build Remaining Agents",
+      "desc": "Still needed: Scribe (WR2), Analytics (TE), Closer (FB), LinkedIn Pro (CB)",
       "tag": "team",
       "assignee": "QB",
       "created": "2026-02-13"
+    },
+    {
+      "id": "037",
+      "col": "future",
+      "title": "State of Hiring Monthly Report",
+      "desc": "Branded PDF — BLS data, 4CR placement data, trending themes. LinkedIn + email + website distribution.",
+      "tag": "brand",
+      "assignee": "QB",
+      "created": "2026-02-15"
+    },
+    {
+      "id": "038",
+      "col": "future",
+      "title": "Full Sitemap Inventory",
+      "desc": "Complete crawl of 4CR site — every page cataloged. No more guessing what exists.",
+      "tag": "seo",
+      "assignee": "Scout",
+      "created": "2026-02-15"
+    },
+    {
+      "id": "039",
+      "col": "future",
+      "title": "Reddit Strategy for 4CR + AI Worker",
+      "desc": "Pete wants separate project exploring Reddit for 4CR, Pete's brand, and The AI Worker",
+      "tag": "brand",
+      "assignee": "TBD",
+      "created": "2026-02-14"
     }
   ]
 }
