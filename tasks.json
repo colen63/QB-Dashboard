@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T13:00:00-05:00",
+  "lastUpdated": "2026-02-16T14:00:00-08:00",
   "tasks": [
     {
       "id": "001",
@@ -343,9 +343,9 @@
     },
     {
       "id": "002",
-      "col": "future",
+      "col": "current",
       "title": "Build Remaining Agents",
-      "desc": "Scribe deployed (Claude Sonnet). Still needed: Analytics (TE), Closer (FB), LinkedIn Pro (CB)",
+      "desc": "Closer deployed. Still needed: Analytics (TE), LinkedIn Pro (CB)",
       "tag": "team",
       "assignee": "QB",
       "created": "2026-02-13"
@@ -503,6 +503,64 @@
       "desc": "Analyze what's working, double down on winners, cut losers. End of Month 1.",
       "tag": "social",
       "assignee": "QB",
+      "created": "2026-02-16"
+    },
+    {
+      "id": "054",
+      "col": "done",
+      "title": "Closer Agent Deployed",
+      "desc": "Outbound sales specialist — Claude Sonnet 4, active. SOUL.md written.",
+      "tag": "team",
+      "assignee": "QB",
+      "created": "2026-02-16",
+      "completed": "2026-02-16"
+    },
+    {
+      "id": "055",
+      "col": "done",
+      "title": "Outbound Playbook Delivered",
+      "desc": "5 sequences, lead scoring model, buying signal detection, sample copy, 4-week implementation. Emailed to Pete.",
+      "tag": "bd",
+      "assignee": "QB",
+      "created": "2026-02-16",
+      "completed": "2026-02-16"
+    },
+    {
+      "id": "056",
+      "col": "done",
+      "title": "Site Content Inventory",
+      "desc": "Full sitemap crawl — every page cataloged. Discovered existing surveys, tools, location pages we didn't know about.",
+      "tag": "seo",
+      "assignee": "QB",
+      "created": "2026-02-16",
+      "completed": "2026-02-16"
+    },
+    {
+      "id": "057",
+      "col": "done",
+      "title": "AI Worker YouTube Pipeline",
+      "desc": "Voice profile built, M/W/F cron for script generation, covered-stories log. Scripts deliver to Cole's Telegram.",
+      "tag": "content",
+      "assignee": "QB",
+      "created": "2026-02-16",
+      "completed": "2026-02-16"
+    },
+    {
+      "id": "058",
+      "col": "current",
+      "title": "Cole's AI Agent Auditing Venture",
+      "desc": "10 opportunities researched, Cole picked AI Agent Auditing. 2-3 month MVP timeline. Deep dive next.",
+      "tag": "ai",
+      "assignee": "Cole",
+      "created": "2026-02-16"
+    },
+    {
+      "id": "059",
+      "col": "current",
+      "title": "HubSpot Outbound Launch",
+      "desc": "Awaiting Pete's decision on which sequence to launch first. QB recommends Re-Engagement for 5,200 cold MQLs.",
+      "tag": "bd",
+      "assignee": "Pete",
       "created": "2026-02-16"
     }
   ]
