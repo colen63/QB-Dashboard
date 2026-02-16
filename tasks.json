@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T17:00:00-05:00",
+  "lastUpdated": "2026-02-15T21:00:00-05:00",
   "tasks": [
     {
       "id": "001",
@@ -232,21 +232,23 @@
     },
     {
       "id": "033",
-      "col": "current",
+      "col": "done",
       "title": "First LinkedIn Post — Reverse Recruiting",
-      "desc": "BLOCKED: Waiting for Scribe agent registration. Then: QB brief → Scribe writes → QB quality gate → Pete review",
+      "desc": "Published Feb 15! Scribe wrote through 4 revisions, Pete published to LinkedIn. Track engagement.",
       "tag": "brand",
       "assignee": "Scribe",
-      "created": "2026-02-15"
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
     },
     {
       "id": "034",
-      "col": "current",
-      "title": "Fix Resend API (Email Delivery)",
-      "desc": "API key returning 403 — Cole needs to check/refresh. Required for content delivery to Pete.",
+      "col": "done",
+      "title": "Resend API Email Delivery",
+      "desc": "Working! API key saved to OpenClaw env vars. Sends from onboarding@resend.dev → Pete confirmed receiving.",
       "tag": "ops",
       "assignee": "Cole",
-      "created": "2026-02-15"
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
     },
     {
       "id": "035",
@@ -259,12 +261,13 @@
     },
     {
       "id": "036",
-      "col": "current",
+      "col": "done",
       "title": "Dashboard Auto-Update Cron",
-      "desc": "Keep QB Dashboard on GitHub continuously updated",
+      "desc": "Cron job running — auto-updates GitHub dashboard with task changes",
       "tag": "ops",
       "assignee": "QB",
-      "created": "2026-02-15"
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
     },
     {
       "id": "017",
@@ -342,7 +345,7 @@
       "id": "002",
       "col": "future",
       "title": "Build Remaining Agents",
-      "desc": "Still needed: Scribe (WR2), Analytics (TE), Closer (FB), LinkedIn Pro (CB)",
+      "desc": "Scribe deployed (Claude Sonnet). Still needed: Analytics (TE), Closer (FB), LinkedIn Pro (CB)",
       "tag": "team",
       "assignee": "QB",
       "created": "2026-02-13"
@@ -373,6 +376,43 @@
       "tag": "brand",
       "assignee": "TBD",
       "created": "2026-02-14"
+    },
+    {
+      "id": "040",
+      "col": "current",
+      "title": "Free Candidate Sourcing — Phase 1",
+      "desc": "Chrome extensions, JobPosting schema, free job boards, Boolean search training. Cole + Peter executing Monday.",
+      "tag": "ops",
+      "assignee": "Cole",
+      "created": "2026-02-15"
+    },
+    {
+      "id": "041",
+      "col": "current",
+      "title": "@AIQB X Account — Daily Posts",
+      "desc": "Cole's venture. Anonymous tech commentator. QB drafts, Cole posts. First post: Matt Shumer essay take.",
+      "tag": "ai",
+      "assignee": "Cole",
+      "created": "2026-02-15"
+    },
+    {
+      "id": "042",
+      "col": "done",
+      "title": "Scribe Agent Deployed",
+      "desc": "Content writer — Claude Sonnet, active. First assignment: LinkedIn reverse recruiting post (shipped).",
+      "tag": "team",
+      "assignee": "QB",
+      "created": "2026-02-15",
+      "completed": "2026-02-15"
+    },
+    {
+      "id": "043",
+      "col": "future",
+      "title": "Custom Email Domain for QB",
+      "desc": "Verify custom domain in Resend for qb@4cornerresources.com or qb@aiqb.ai",
+      "tag": "ops",
+      "assignee": "Cole",
+      "created": "2026-02-15"
     }
   ]
 }
