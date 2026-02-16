@@ -1,0 +1,205 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EmploymentAgency",
+      "@id": "https://www.4cornerresources.com/locations/orlando/#employmentagency",
+      "name": "4 Corner Resources - Orlando Staffing Agency",
+      "description": "Orlando-based staffing agency providing contract and direct hire recruiting services across IT, healthcare, finance, call center, marketing, HR, and legal industries.",
+      "url": "https://www.4cornerresources.com/locations/orlando/",
+      "telephone": "+1-407-872-1039",
+      "email": "info@4cornerresources.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "UPDATE_WITH_EXACT_ADDRESS",
+        "addressLocality": "Orlando",
+        "addressRegion": "FL",
+        "postalCode": "UPDATE_ZIP",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "UPDATE_LATITUDE",
+        "longitude": "UPDATE_LONGITUDE"
+      },
+      "areaServed": [
+        {
+          "@type": "County",
+          "name": "Orange County",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        },
+        {
+          "@type": "County",
+          "name": "Seminole County",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        },
+        {
+          "@type": "County",
+          "name": "Osceola County",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Orlando",
+          "containedInPlace": {
+            "@type": "State",
+            "name": "Florida"
+          }
+        }
+      ],
+      "serviceType": [
+        "Contract Staffing",
+        "Direct Hire Recruiting",
+        "Temporary Staffing",
+        "IT Recruiting",
+        "Healthcare Recruiting",
+        "Finance and Accounting Recruiting",
+        "Call Center Recruiting",
+        "Customer Service Recruiting",
+        "Marketing Recruiting",
+        "Human Resources Recruiting",
+        "Legal Recruiting"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "parentOrganization": {
+        "@id": "https://www.4cornerresources.com/#organization"
+      },
+      "image": "https://www.4cornerresources.com/UPDATE_WITH_LOGO_URL",
+      "sameAs": [
+        "https://www.linkedin.com/company/4-corner-resources/",
+        "https://www.facebook.com/4cornerresources",
+        "https://twitter.com/4aborResources"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.4cornerresources.com/#organization",
+      "name": "4 Corner Resources",
+      "url": "https://www.4cornerresources.com/",
+      "logo": "https://www.4cornerresources.com/UPDATE_WITH_LOGO_URL",
+      "description": "Full-service staffing agency headquartered in Orlando, Florida providing contract and direct hire recruiting nationwide.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Orlando",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-407-872-1039",
+        "contactType": "sales",
+        "availableLanguage": ["English", "Spanish"]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.4cornerresources.com/locations/orlando/#webpage",
+      "url": "https://www.4cornerresources.com/locations/orlando/",
+      "name": "Orlando Staffing Agency | Contract & Direct Hire Recruiting | 4 Corner Resources",
+      "description": "Orlando's trusted staffing agency for contract and direct hire recruiting. 4 Corner Resources connects employers with top talent across IT, healthcare, finance, and more.",
+      "isPartOf": {
+        "@id": "https://www.4cornerresources.com/#website"
+      },
+      "about": {
+        "@id": "https://www.4cornerresources.com/locations/orlando/#employmentagency"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.4cornerresources.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Locations",
+            "item": "https://www.4cornerresources.com/locations/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Orlando",
+            "item": "https://www.4cornerresources.com/locations/orlando/"
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.4cornerresources.com/locations/orlando/#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How quickly can you start presenting candidates for an open role?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most positions, we begin presenting pre-screened candidates within 3–5 business days of receiving your job requirements. Roles we recruit for frequently — like customer service, administrative, and IT support positions — often have qualified candidates ready even sooner from our existing network."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost to work with a staffing agency in Orlando?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our fee structure depends on the type of engagement. Contract staffing uses a bill rate that covers the candidate's pay, our administrative costs, and our margin. Direct hire placements use a percentage-of-salary fee, typically paid only after a successful hire. We'll provide transparent pricing before any engagement begins."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you only work with large companies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all. We work with employers ranging from 10-person offices to Fortune 500 companies with Orlando operations. Our process scales to fit your size, budget, and hiring volume. Many of our longest client relationships started with a single hard-to-fill role."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if a placement doesn't work out?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We stand behind our placements. Contract employees can be replaced quickly if performance doesn't meet expectations. Direct hire placements include a guarantee period — if the hire doesn't work out within that window, we'll reopen the search at no additional fee."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help with high-volume hiring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We regularly support employers with bulk hiring needs, particularly in call center, customer service, and administrative roles. We can ramp sourcing and screening capacity to meet your timeline, whether that's 5 hires or 50."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is 4 Corner Resources different from other Orlando staffing agencies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're locally headquartered, which means faster response times, deeper market knowledge, and a team that's personally invested in Orlando's business community. We also take a consultative approach — we'd rather help you refine a job description to attract better candidates than just blast it to every job board and hope for the best."
+          }
+        }
+      ]
+    }
+  ]
+}
