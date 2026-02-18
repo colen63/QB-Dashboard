@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-18T10:00:00-08:00",
+  "lastUpdated": "2026-02-18T14:00:00-08:00",
   "tasks": [
     {
       "id": "001",
@@ -343,12 +343,13 @@
     },
     {
       "id": "002",
-      "col": "current",
+      "col": "done",
       "title": "Build Remaining Agents",
-      "desc": "Closer deployed. Still needed: Analytics (TE), LinkedIn Pro (CB)",
+      "desc": "All 8 agents live: QB, Scout, Scribe, Hype, Intel, Closer, Webmaster, Analytics",
       "tag": "team",
       "assignee": "QB",
-      "created": "2026-02-13"
+      "created": "2026-02-13",
+      "completed": "2026-02-18"
     },
     {
       "id": "037",
@@ -558,10 +559,79 @@
       "id": "059",
       "col": "current",
       "title": "HubSpot Outbound Launch",
-      "desc": "Awaiting Pete's decision on which sequence to launch first. QB recommends Re-Engagement for 5,200 cold MQLs.",
+      "desc": "NLQ Sequence v3 delivered and emailed to Pete. Awaiting his review and go-ahead to launch.",
       "tag": "bd",
       "assignee": "Pete",
       "created": "2026-02-16"
+    },
+    {
+      "id": "060",
+      "col": "done",
+      "title": "Webmaster Agent Deployed",
+      "desc": "Site audit & technical SEO specialist — Gemini 2.5 Pro, active",
+      "tag": "team",
+      "assignee": "QB",
+      "created": "2026-02-17",
+      "completed": "2026-02-17"
+    },
+    {
+      "id": "061",
+      "col": "done",
+      "title": "Analytics Agent Deployed",
+      "desc": "Data & reporting specialist — Gemini 2.5 Pro, active",
+      "tag": "team",
+      "assignee": "QB",
+      "created": "2026-02-17",
+      "completed": "2026-02-17"
+    },
+    {
+      "id": "062",
+      "col": "done",
+      "title": "ARDA Cornerstone VMS Master Package",
+      "desc": "Complete outreach package: 23 prospects researched, email templates, call framework, 3-wave plan. Ready for Crystal & Cristal.",
+      "tag": "bd",
+      "assignee": "QB",
+      "created": "2026-02-17",
+      "completed": "2026-02-17"
+    },
+    {
+      "id": "063",
+      "col": "done",
+      "title": "HubSpot NLQ Sequence v3",
+      "desc": "Complete rebuild — under 150 words per email, timeline hooks, verified stats only. Emailed to Pete.",
+      "tag": "bd",
+      "assignee": "QB",
+      "created": "2026-02-17",
+      "completed": "2026-02-17"
+    },
+    {
+      "id": "064",
+      "col": "current",
+      "title": "n8n Zoom → JobDiva Workflow",
+      "desc": "Webhook + parser + search + note creation. Blocked on JobDiva API credentials from admin.",
+      "tag": "ops",
+      "assignee": "Cole",
+      "created": "2026-02-18"
+    },
+    {
+      "id": "065",
+      "col": "done",
+      "title": "Peter (Ops Director) Onboarded",
+      "desc": "Telegram access configured — full access to all 4CR matters.",
+      "tag": "ops",
+      "assignee": "QB",
+      "created": "2026-02-18",
+      "completed": "2026-02-18"
+    },
+    {
+      "id": "066",
+      "col": "done",
+      "title": "AI Worker Script Pipeline Live",
+      "desc": "M/W/F cron delivering scripts to Cole's Telegram. Voice profile built, covered-stories log active.",
+      "tag": "content",
+      "assignee": "QB",
+      "created": "2026-02-16",
+      "completed": "2026-02-18"
     }
   ]
 }
