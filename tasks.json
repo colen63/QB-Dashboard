@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-02T10:00:00-08:00",
+  "lastUpdated": "2026-03-02T14:00:00-08:00",
   "tasks": [
     {
       "id": "001",
@@ -664,6 +664,25 @@
       "assignee": "QB",
       "created": "2026-02-24",
       "completed": "2026-02-24"
+    },
+    {
+      "id": "070",
+      "col": "done",
+      "title": "Sourcing Platform — Team Research & Product Spec",
+      "desc": "Full team sprint: Scout (competitors/data), Intel (market sizing $26K firms, $75-150/user pricing), Closer (GTM, Y1 $300K ARR), Hype (brand — 'Shortlist AI'). QB product spec written. All at /workspace/sourcing-platform/",
+      "tag": "ai",
+      "assignee": "QB",
+      "created": "2026-03-02",
+      "completed": "2026-03-02"
+    },
+    {
+      "id": "071",
+      "col": "current",
+      "title": "QB Scope Cleanup — Focus on Sourcing + Cole",
+      "desc": "Pete wants to clean QB's memory to focus on 4CR sourcing + Cole's projects. Marketing responsibilities shifting to Chief (Pete's Mac Mini). Awaiting Pete's go-ahead.",
+      "tag": "ops",
+      "assignee": "Pete",
+      "created": "2026-03-02"
     }
   ]
 }
