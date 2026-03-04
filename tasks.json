@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-04T10:00:00-08:00",
+  "lastUpdated": "2026-03-04T14:01:00-08:00",
   "tasks": [
     {
       "id": "001",
@@ -674,6 +674,16 @@
       "assignee": "QB",
       "created": "2026-03-02",
       "completed": "2026-03-02"
+    },
+    {
+      "id": "072",
+      "col": "done",
+      "title": "4CR Internal Sourcing Tool — Research & Build Plan",
+      "desc": "Full team sprint: Scout (free source audit), Intel (legal/compliance), Closer (workflow design). Master build plan at /workspace/4cr-sourcing/MASTER-BUILD-PLAN.md. GitHub, Stack Overflow, LinkedIn X-Ray, Reddit sourcing. 2-3 day n8n build, $0 cost.",
+      "tag": "ops",
+      "assignee": "QB",
+      "created": "2026-03-04",
+      "completed": "2026-03-04"
     },
     {
       "id": "071",
