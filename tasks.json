@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T10:00:00-08:00",
+  "lastUpdated": "2026-03-05T14:00:00-08:00",
   "tasks": [
     {
       "id": "001",
@@ -609,8 +609,8 @@
     {
       "id": "064",
       "col": "current",
-      "title": "n8n Zoom \u2192 JobDiva Workflow",
-      "desc": "Webhook + parser + search + note creation. Blocked on JobDiva API credentials from admin.",
+      "title": "n8n JobDiva \u2192 Sourcing Workflow",
+      "desc": "Auto-source candidates on new JobDiva postings. JobDiva webhooks discovered! Blocked on correct job search API endpoint \u2014 Cole/Peter contacting JobDiva support.",
       "tag": "ops",
       "assignee": "Cole",
       "created": "2026-02-18"
