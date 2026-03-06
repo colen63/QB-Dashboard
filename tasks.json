@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T14:00:00-08:00",
+  "lastUpdated": "2026-03-05T18:00:00-08:00",
   "tasks": [
     {
       "id": "001",
@@ -610,7 +610,7 @@
       "id": "064",
       "col": "current",
       "title": "n8n JobDiva \u2192 Sourcing Workflow",
-      "desc": "Auto-source candidates on new JobDiva postings. JobDiva webhooks discovered! Blocked on correct job search API endpoint \u2014 Cole/Peter contacting JobDiva support.",
+      "desc": "Auto-source candidates on new JobDiva postings. JobDiva API endpoints CONFIRMED WORKING (auth, NewUpdatedJobRecords, JobDetail). Python sourcing script built & tested. Cole to build n8n workflow.",
       "tag": "ops",
       "assignee": "Cole",
       "created": "2026-02-18"
@@ -684,6 +684,16 @@
       "assignee": "QB",
       "created": "2026-03-04",
       "completed": "2026-03-04"
+    },
+    {
+      "id": "073",
+      "col": "done",
+      "title": "Sourcing Agent Python Script — Built & Tested",
+      "desc": "sourcing_agent.py polls JobDiva every 15 min, filters closed jobs, generates Booleans via OpenAI, searches LinkedIn (Brave), GitHub API, Stack Overflow API, pushes candidates to JobDiva. Live test offered on Tampa TA Specialist job.",
+      "tag": "ops",
+      "assignee": "QB",
+      "created": "2026-03-05",
+      "completed": "2026-03-05"
     },
     {
       "id": "071",
