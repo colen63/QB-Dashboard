@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T10:00:00-08:00",
+  "lastUpdated": "2026-03-06T14:01:00-08:00",
   "tasks": [
     {
       "id": "001",
@@ -703,6 +703,15 @@
       "tag": "ops",
       "assignee": "Pete",
       "created": "2026-03-02"
+    },
+    {
+      "id": "074",
+      "col": "current",
+      "title": "Salary Data Page Cleanup — Noindex 139K City Pages",
+      "desc": "Pete approved: noindex ALL city/child pages under /salary-data/*/*/, keep & beef up ~50 parent pages. 140K pages earning only 18 clicks/day total. Analysis at /workspace/salary-data-analysis/. Next: confirm Yoast regex noindex or developer needed.",
+      "tag": "seo",
+      "assignee": "QB",
+      "created": "2026-03-06"
     }
   ]
 }
