@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-10T18:00:00-07:00",
+  "lastUpdated": "2026-03-11T06:00:00-07:00",
   "tasks": [
     {
       "id": "001",
@@ -559,12 +559,13 @@
     },
     {
       "id": "059",
-      "col": "current",
+      "col": "done",
       "title": "HubSpot Outbound Launch",
-      "desc": "NLQ Sequence v3 delivered and emailed to Pete. Awaiting his review and go-ahead to launch.",
+      "desc": "NLQ Sequence v3 LIVE — Peter running them via desktop Claude. Fully Peter's domain now.",
       "tag": "bd",
-      "assignee": "Pete",
-      "created": "2026-02-16"
+      "assignee": "Peter",
+      "created": "2026-02-16",
+      "completed": "2026-03-10"
     },
     {
       "id": "060",
@@ -706,12 +707,13 @@
     },
     {
       "id": "074",
-      "col": "current",
+      "col": "done",
       "title": "Salary Data Page Cleanup — Noindex 139K City Pages",
-      "desc": "Pete approved: noindex ALL city/child pages under /salary-data/*/*/, keep & beef up ~50 parent pages. 140K pages earning only 18 clicks/day total. Analysis at /workspace/salary-data-analysis/. Next: confirm Yoast regex noindex or developer needed.",
+      "desc": "Pete confirmed noindex applied to all 139K city/child pages. Monitoring GSC 'Crawled - currently not indexed' count over next 2-4 weeks. ~700 parent pages still need enrichment (proposed, awaiting OK).",
       "tag": "seo",
-      "assignee": "QB",
-      "created": "2026-03-06"
+      "assignee": "Pete",
+      "created": "2026-03-06",
+      "completed": "2026-03-10"
     }
   ]
 }
