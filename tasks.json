@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-12T18:00:00-07:00",
+  "lastUpdated": "2026-03-13T06:00:00-07:00",
   "tasks": [
     {
       "id": "001",
@@ -610,10 +610,10 @@
     {
       "id": "064",
       "col": "current",
-      "title": "n8n JobDiva \u2192 Sourcing Workflow",
-      "desc": "Auto-source candidates on new JobDiva postings. JobDiva API endpoints CONFIRMED WORKING (auth, NewUpdatedJobRecords, JobDetail). Python sourcing script built & tested. Cole to build n8n workflow.",
+      "title": "JobDiva Auto-Sourcing Pipeline",
+      "desc": "Architecture shifted: QB runs sourcing directly via OpenClaw cron + JobDiva skill (no Python/n8n). Dedup, resume upload, and field name bugs all fixed. Cron PAUSED per Cole \u2014 awaiting approval to restart. Key remaining: contact info discovery from free sources.",
       "tag": "ops",
-      "assignee": "Cole",
+      "assignee": "QB",
       "created": "2026-02-18"
     },
     {
